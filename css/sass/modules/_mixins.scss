@@ -1,0 +1,36 @@
+
+// Base Transition
+@mixin transition($type, $dur) {
+  -webkit-transition: $type $dur;
+  -moz-transition: $type $dur;
+  -ms-transition: $type $dur;
+  -o-transition: $type $dur;
+  transition: $type $dur;
+}
+
+
+// Media Query Beakpoints
+// Extra small devices (portrait phones, less than 479px)
+@mixin xs {
+  @media (max-width: #{$sm-width}) {
+    @content;
+  }
+}
+// Small devices (landscape phones, 480px and up)
+@mixin sm {
+  @media (max-width: #{$md-width}) {
+    @content;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@mixin md {
+  @media (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+// Large devices (desktops, 992px and up)
+@mixin lg {
+  @media (min-width: #{$lg-width}) {
+    @content;
+  }
+}

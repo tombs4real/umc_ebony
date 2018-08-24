@@ -1,0 +1,166 @@
+// footer
+.uu-footer {
+  color: $white;
+}
+
+.uu-footer a {
+  text-transform: uppercase;
+}
+
+// footer top
+.uu-footer .footer-top {
+  background: $uu-black;
+  padding: 50px 0;
+}
+
+.uu-footer .footer-top .uu-block-logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.uu-footer .footer-top h5.department-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #D5D5D5;
+}
+
+.uu-footer .footer-top p.department-address {
+  font-size: 12px;
+  color: #D5D5D5;
+}
+
+
+.uu-footer .footer-top h3.uu-main-nav-heading {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.uu-footer .footer-top hr {
+  height: 4px;
+  width: 50px;
+  background: $uu-red;
+  margin: 5px 0px 15px 0px;
+}
+
+.uu-footer .footer-top hr.right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.uu-footer .footer-top ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.uu-footer .footer-top ul li a {
+  font-size: 11px;
+  color: #D5D5D5;
+}
+
+
+// footer bottom
+.uu-footer .footer-bottom {
+  background: $uu-ebony;
+  padding: 30px 0;
+}
+
+.uu-footer .footer-bottom .uu-site-logo {
+  max-width: 200px;
+}
+
+.uu-footer .footer-bottom .legal {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #847A7A;
+}
+.uu-footer .footer-bottom .legal ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.uu-footer .footer-bottom .legal ul li {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.uu-footer .footer-bottom .legal ul li::before {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  content: '/'
+}
+.uu-footer .footer-bottom .legal ul li:first-child{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.uu-footer .footer-bottom .legal ul li:first-child::before{
+  content: ''
+}
+.uu-footer .footer-bottom .legal ul li a {
+  color: #847A7A;
+  @include transition(all, 0.3s)
+}
+.uu-footer .footer-bottom .legal ul li a:hover {
+  color: $white;
+}
+
+.uu-footer .footer-bottom .uu-social-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.uu-footer .footer-bottom .uu-social-list li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.uu-footer .footer-bottom .uu-social-list li a {
+  color: $white;
+  font-size: 18px;
+  @include transition(all, 0.3s)
+}
+
+.uu-footer .footer-bottom .uu-social-list li a:hover {
+  color: $uu-red;
+}
+
+.uu-footer .footer-bottom .uu-social-list li a:hover i {
+  transform: scale(1.5);
+}
+
+
+
+
+
+// footer media queries
+// extra small devices (portrait phones, less than 480px)
+@include xs {
+
+}
+
+// small devices (landscape phones, 480px and up)
+@include sm {
+  .uu-footer .footer-bottom .uu-site-logo, .uu-footer .footer-bottom .legal {
+    margin-bottom: 30px;
+  }
+
+  .uu-footer .footer-top hr,
+  .uu-footer .footer-top hr.right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+// medium devices (tablets, 768px and up)
+@include md {
+
+}
+
+// large devices (desktops, 992px and up)
+@include lg {
+
+}

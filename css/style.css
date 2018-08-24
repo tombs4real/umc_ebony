@@ -1,0 +1,731 @@
+/*!
+Theme Name:UMC Theme 3
+Theme URI:http://umc.utah.edu/
+Description:Responsive theme with off-canvas push nav.
+Version: Beta
+Author:UMC Digital
+Author URI: http://umc.utah.edu/
+License: Approved use for the University of Utah Marketing and Communications only
+License URI: http://umc.utah.edu/
+Tags: Responsive University
+Text Domain: umctheme3
+
+/* ===========================
+	Fonts
+============================ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:400,600,700|Quantico:700");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* ===========================
+	Mixins & Variables
+============================ */
+/* ===========================
+	Partials
+============================ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_global\.scss}line{font-family:\000031}}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_global\.scss}line{font-family:\000035}}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_global\.scss}line{font-family:\0000311}}
+a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_global\.scss}line{font-family:\0000314}}
+a:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\000031}}
+.uu-header {
+  position: relative;
+  background: #372C2C;
+  padding: 15px 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\000039}}
+.uu-header.fixed {
+  position: fixed;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000315}}
+.uu-header.shrink {
+  padding: 8px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000318}}
+.uu-header.shrink .uu-logo {
+  max-width: 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000321}}
+.uu-header.shrink .uu-block-logo {
+  max-width: 24px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000325}}
+.uu-header.shrink .uu-search-btn, .uu-header.shrink .uu-hamburger {
+  top: calc(50% - 20px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000329}}
+.uu-header .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000333}}
+.uu-header .row > [class^="col-"], .uu-header .row > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000340}}
+.uu-logo {
+  display: inline-flex;
+  max-width: 150px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000345}}
+.uu-block-logo {
+  max-width: 41px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000350}}
+.uu-site-title {
+  display: inline-flex;
+  position: relative;
+  top: calc(50% - 14px);
+  font-size: 24px;
+  text-transform: uppercase;
+  border-left: 1px solid #707070;
+  padding-left: 15px;
+  margin-left: 10px;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000362}}
+.uu-site-title:hover {
+  opacity: .85;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000365}}
+.uu-site-title a {
+  color: #ffffff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000368}}
+.uu-site-title span {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  padding: 5px;
+  background: #CC0000;
+  color: #ffffff;
+  font-family: "Quantico", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\0000382}}
+.uu-search-btn {
+  position: absolute;
+  top: calc(50% - 17px);
+  right: 50px;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  color: #fff;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  opacity: .75;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003101}}
+.uu-search-btn:focus, .uu-search-btn:hover {
+  outline: none;
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003106}}
+.uu-search-btn:hover {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003119}}
+.uu-hamburger, .mobile-close-nav {
+  position: absolute;
+  top: calc(50% - 18px);
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  text-indent: -9999px;
+  color: #fff;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  opacity: .75;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003139}}
+.uu-hamburger:focus,
+.uu-hamburger:hover,
+.mobile-close-nav:focus,
+.mobile-close-nav:hover {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003146}}
+.uu-hamburger:hover,
+.mobile-close-nav:hover {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003151}}
+.uu-hamburger span,
+.mobile-close-nav span {
+  display: block;
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  height: 2px;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003162}}
+.uu-hamburger span::before,
+.uu-hamburger span::after,
+.mobile-close-nav span::before,
+.mobile-close-nav span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003175}}
+.uu-hamburger span::before,
+.mobile-close-nav span::before {
+  top: 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003180}}
+.uu-hamburger span::after,
+.mobile-close-nav span::after {
+  bottom: 7px;
+}
+
+/* transition */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003187}}
+.uu-hamburger--x span::before,
+.uu-hamburger--x span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003193}}
+.uu-hamburger--x span::before,
+.mobile-close-nav span::before {
+  transition-property: top, transform;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003199}}
+.uu-hamburger--x span::after,
+.mobile-close-nav span:after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003206}}
+.uu-hamburger--x.is-active span,
+.mobile-close-nav span {
+  background: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003211}}
+.uu-hamburger--x.is-active span::before,
+.mobile-close-nav span::before {
+  top: 0;
+  transform: rotate(45deg);
+  z-index: 101;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003218}}
+.uu-hamburger--x.is-active span::after,
+.mobile-close-nav span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  box-shadow: 1px 1px 1px 1px #372C2C;
+  z-index: 102;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003226}}
+.uu-hamburger--x.is-active span::before,
+.uu-hamburger--x.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003234}}
+.mobile-close-nav {
+  display: none;
+  top: 22px;
+  left: 20px;
+  z-index: 101;
+  background: #372C2C;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003245}}
+.uu-main-nav {
+  position: fixed;
+  background: #1C1616;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  right: -350px;
+  bottom: 0;
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: inset 10px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003261}}
+.uu-main-nav.uu-main-nav-open {
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003265}}
+.uu-main-nav .uu-site-logo {
+  width: 250px !important;
+  display: block;
+  margin: 1.5em auto 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003271}}
+.menu-block {
+  padding-left: 50px;
+  margin: 50px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003276}}
+.menu-block a {
+  display: block;
+  color: #ffffff;
+  padding: 12px 0px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003283}}
+.menu-block ul li:hover > h3 a {
+  background-color: #372C2C;
+  padding-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003289}}
+h3.uu-main-nav-heading {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003297}}
+.menu-block hr {
+  height: 4px;
+  width: 50px;
+  background: #CC0000;
+  margin: 5px 0px 15px 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003304}}
+.menu-block ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003310}}
+.menu-block h3 {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003316}}
+.menu-block ul li {
+  position: relative;
+  border-bottom: 1px solid #4B4B4B;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003322}}
+.has-sub i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: #1C1616;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 11px 0px 0px 18px;
+  border-left: 1px solid #4B4B4B;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003336}}
+.has-sub i:hover {
+  background: #372C2C;
+  padding-top: 9px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003341}}
+.sub-menu {
+  display: none;
+  background-color: #292222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003345}}
+.sub-menu h3 {
+  font-size: 14px !important;
+  line-height: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003349}}
+.sub-menu li {
+  border-bottom: 1px solid #3B3B3B;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003352}}
+.sub-menu li:first-child {
+  border-top: 1px solid #3B3B3B;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003355}}
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003358}}
+.sub-menu a {
+  padding-left: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_header\.scss}line{font-family:\00003361}}
+.sub-menu li:hover > h3 a {
+  padding-left: 25px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\000032}}
+.uu-footer {
+  color: #ffffff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\000036}}
+.uu-footer a {
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000311}}
+.uu-footer .footer-top {
+  background: #1C1616;
+  padding: 50px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000316}}
+.uu-footer .footer-top .uu-block-logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000321}}
+.uu-footer .footer-top h5.department-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #D5D5D5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000327}}
+.uu-footer .footer-top p.department-address {
+  font-size: 12px;
+  color: #D5D5D5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000333}}
+.uu-footer .footer-top h3.uu-main-nav-heading {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000338}}
+.uu-footer .footer-top hr {
+  height: 4px;
+  width: 50px;
+  background: #CC0000;
+  margin: 5px 0px 15px 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000345}}
+.uu-footer .footer-top hr.right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000350}}
+.uu-footer .footer-top ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000356}}
+.uu-footer .footer-top ul li a {
+  font-size: 11px;
+  color: #D5D5D5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000363}}
+.uu-footer .footer-bottom {
+  background: #372C2C;
+  padding: 30px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000368}}
+.uu-footer .footer-bottom .uu-site-logo {
+  max-width: 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000372}}
+.uu-footer .footer-bottom .legal {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #847A7A;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000377}}
+.uu-footer .footer-bottom .legal ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000382}}
+.uu-footer .footer-bottom .legal ul li {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000388}}
+.uu-footer .footer-bottom .legal ul li::before {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  content: "/";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000394}}
+.uu-footer .footer-bottom .legal ul li:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\0000398}}
+.uu-footer .footer-bottom .legal ul li:first-child::before {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003101}}
+.uu-footer .footer-bottom .legal ul li a {
+  color: #847A7A;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003105}}
+.uu-footer .footer-bottom .legal ul li a:hover {
+  color: #ffffff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003109}}
+.uu-footer .footer-bottom .uu-social-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003115}}
+.uu-footer .footer-bottom .uu-social-list li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003120}}
+.uu-footer .footer-bottom .uu-social-list li a {
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003126}}
+.uu-footer .footer-bottom .uu-social-list li a:hover {
+  color: #CC0000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003130}}
+.uu-footer .footer-bottom .uu-social-list li a:hover i {
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003146}}
+  .uu-footer .footer-bottom .uu-site-logo, .uu-footer .footer-bottom .legal {
+    margin-bottom: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_footer\.scss}line{font-family:\00003150}}
+  .uu-footer .footer-top hr,
+  .uu-footer .footer-top hr.right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\000035}}
+  .uu-main-nav.uu-main-nav-open {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\000038}}
+  .page-container.uu-body-pushbody-left {
+    left: -100% !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\0000312}}
+  .mobile-close-nav {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\0000316}}
+  .uu-header {
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\0000320}}
+  .uu-search-btn {
+    left: 0px;
+    right: auto;
+  }
+}
+@media (max-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\0000335}}
+  .uu-site-title {
+    font-size: 18px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/partials\/_media-queries\.scss}line{font-family:\0000338}}
+  .uu-site-title span {
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/main\.scss}line{font-family:\0000338}}
+.page-container {
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/main\.scss}line{font-family:\0000343}}
+.page-container.uu-body-pushbody-left {
+  left: -350px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/main\.scss}line{font-family:\0000347}}
+main {
+  min-height: 1200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/u6020572\/Documents\/umc-digital\/projects\/umctheme3\/css\/sass\/main\.scss}line{font-family:\0000358}}
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

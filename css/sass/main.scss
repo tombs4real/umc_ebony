@@ -1,0 +1,58 @@
+/*!
+Theme Name:UMC Theme 3
+Theme URI:http://umc.utah.edu/
+Description:Responsive theme with off-canvas push nav.
+Version: Beta
+Author:UMC Digital
+Author URI: http://umc.utah.edu/
+License: Approved use for the University of Utah Marketing and Communications only
+License URI: http://umc.utah.edu/
+Tags: Responsive University
+Text Domain: umctheme3
+
+/* ===========================
+	Fonts
+============================ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:400,600,700|Quantico:700");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* ===========================
+	Mixins & Variables
+============================ */
+@import "modules/variables";
+@import "modules/mixins";
+
+/* ===========================
+	Partials
+============================ */
+
+// 1. Global Styles
+@import "partials/global";
+// 2. Header
+@import "partials/header";
+// 3. Footer
+@import "partials/footer";
+// 4. Media Queries
+@import "partials/media-queries";
+// 5. Body
+.page-container {
+  position: relative;
+  left: 0;
+  @include transition(all, 0.3s)
+}
+.page-container.uu-body-pushbody-left {
+  left: -350px;
+}
+
+main {
+  min-height: 1200px;
+}
+
+// 6. Widgets
+
+// 7. Plugin Specific Overrides
+
+// 8. Helper Classes
+
+// helper classes #######################################
+.margin-auto {margin-left: auto; margin-right: auto;}

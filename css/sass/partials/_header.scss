@@ -1,0 +1,363 @@
+.uu-header {
+  position: relative;
+  background: $uu-ebony;
+  padding: 15px 0;
+  @include transition(all, 0.3s)
+}
+
+// fixed header
+.uu-header.fixed {
+  position: fixed;
+  width: 100%;
+}
+
+// header shrink on scroll
+.uu-header.shrink {
+  padding: 8px 0;
+}
+.uu-header.shrink .uu-logo {
+  max-width: 100px;
+}
+.uu-header.shrink .uu-block-logo {
+  max-width: 24px;
+}
+
+.uu-header.shrink .uu-search-btn, .uu-header.shrink .uu-hamburger {
+  top: calc(50% - 20px);
+}
+
+.uu-header .row {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.uu-logo {
+  display: inline-flex;
+  max-width: 150px;
+  @include transition(all, 0.3s)
+}
+.uu-block-logo {
+  max-width: 41px;
+  @include transition(all, 0.3s)
+}
+
+.uu-site-title {
+  display: inline-flex;
+  position: relative;
+  top: calc(50% - 14px);
+  font-size: 24px;
+  text-transform: uppercase;
+  border-left: 1px solid #707070;
+  padding-left: 15px;
+  margin-left: 10px;
+  opacity: 1;
+  @include transition(all, 0.3s)
+}
+.uu-site-title:hover {
+  opacity: .85;
+}
+.uu-site-title a {
+  color: $white;
+}
+.uu-site-title span {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  padding: 5px;
+  background: $uu-red;
+  color: $white;
+  font-family: $ff-quan;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 2px;
+}
+
+// search button
+.uu-search-btn {
+  position: absolute;
+  top: calc(50% - 17px);
+  right: 50px;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  color:#fff;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  opacity: .75;
+  @include transition(opacity, 0.3s)
+}
+
+.uu-search-btn:focus, .uu-search-btn:hover {
+  outline: none;
+  border: none;
+}
+
+.uu-search-btn:hover {
+  opacity: 1;
+}
+
+// hamburger button
+
+$button-width: 35px;                    // The width of the button area
+$button-height: 35px;                   // The height of the button area
+$bar-thickness: 2px;                    // The thickness of the button bars
+$button-pad: 7px;                      // The left/right padding between button area and bars.
+$button-bar-space: 7px;                // The spacing between button bars
+$button-transistion-duration: 0.3s;     // The transition duration
+
+.uu-hamburger, .mobile-close-nav {
+  position: absolute;
+  top: calc(50% - 18px);
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+  height: $button-height;
+  font-size: 0;
+  text-indent: -9999px;
+	color:#fff;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  opacity: .75;
+  @include transition(opacity, 0.3s)
+}
+
+.uu-hamburger:focus,
+.uu-hamburger:hover,
+.mobile-close-nav:focus,
+.mobile-close-nav:hover {
+  outline: none;
+}
+
+.uu-hamburger:hover,
+.mobile-close-nav:hover {
+  opacity: 1;
+}
+
+.uu-hamburger span,
+.mobile-close-nav span {
+  display: block;
+  position: absolute;
+  left: $button-pad;
+  right: $button-pad;
+  height: $bar-thickness;
+  border-radius: 2px;
+  background: $white;
+}
+
+.uu-hamburger span::before,
+.uu-hamburger span::after,
+.mobile-close-nav span::before,
+.mobile-close-nav span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: $bar-thickness;
+  background-color: $white;
+  content: "";
+}
+
+.uu-hamburger span::before,
+.mobile-close-nav span::before {
+ 	top: $button-bar-space;
+}
+
+.uu-hamburger span::after,
+.mobile-close-nav span::after {
+  bottom: $button-bar-space;
+}
+
+/* transition */
+
+.uu-hamburger--x span::before,
+.uu-hamburger--x span::after {
+  transition-duration: $button-transistion-duration, $button-transistion-duration;
+  transition-delay: $button-transistion-duration, 0s;
+}
+
+.uu-hamburger--x span::before,
+.mobile-close-nav span::before
+ {
+  transition-property: top, transform;
+}
+
+.uu-hamburger--x span::after,
+.mobile-close-nav span:after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+
+.uu-hamburger--x.is-active span,
+.mobile-close-nav span {
+  background: none;
+}
+
+.uu-hamburger--x.is-active span::before,
+.mobile-close-nav span::before {
+  top: 0;
+  transform: rotate(45deg);
+  z-index: 101;
+}
+
+.uu-hamburger--x.is-active span::after,
+.mobile-close-nav span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  box-shadow:1px 1px 1px 1px $uu-ebony;
+  z-index: 102;
+}
+
+.uu-hamburger--x.is-active span::before,
+.uu-hamburger--x.is-active span::after {
+  transition-delay: 0s, $button-transistion-duration   ;
+}
+
+
+// mobile close nav
+
+.mobile-close-nav {
+  display: none;
+  top: 22px;
+  left: 20px;
+  z-index: 101;
+  background: $uu-ebony;
+}
+
+
+// push menu
+
+.uu-main-nav {
+  position: fixed;
+  background: $uu-black;
+  width: 350px;
+  height: 100%;
+  top: 0;
+  right: -350px;
+  bottom: 0;
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: inset 10px 0px 15px -10px rgba(0,0,0,0.75);
+  @include transition(all, 0.3s)
+}
+.uu-main-nav.uu-main-nav-open {
+  right: 0;
+}
+
+.uu-main-nav .uu-site-logo {
+  width: 250px !important;
+  display: block;
+  margin: 1.5em auto 0.5em;
+}
+
+.menu-block {
+  padding-left: 50px;
+  margin: 50px 0;
+}
+
+.menu-block a {
+  display: block;
+  color: $white;
+  padding: 12px 0px;
+  @include transition(all, 0.3s)
+}
+
+.menu-block ul li:hover > h3 a  {
+  background-color: $uu-ebony;
+  padding-left: 10px;
+}
+
+
+h3.uu-main-nav-heading {
+  color: $white;
+  font-family: $ff-mont;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu-block hr {
+  height: 4px;
+  width: 50px;
+  background: $uu-red;
+  margin: 5px 0px 15px 0px;
+}
+
+.menu-block ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu-block h3 {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 0px;
+}
+
+.menu-block ul li {
+  position: relative;
+  border-bottom: 1px solid #4B4B4B;
+}
+
+// push menu sub menu
+.has-sub i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: $uu-black;
+  color: $white;
+  font-size: 20px;
+  padding: 11px 0px 0px 18px;
+  border-left: 1px solid #4B4B4B;
+  cursor: pointer;
+  @include transition(all, 0.3s)
+}
+.has-sub i:hover {
+  background: $uu-ebony;
+  padding-top: 9px;
+}
+
+.sub-menu {
+  display: none;
+  background-color: #292222;
+}
+.sub-menu h3 {
+  font-size: 14px!important;
+  line-height: 16px;
+}
+.sub-menu li {
+  border-bottom: 1px solid #3B3B3B;
+}
+.sub-menu li:first-child {
+  border-top: 1px solid #3B3B3B;
+}
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+.sub-menu a {
+  padding-left: 15px;
+}
+.sub-menu li:hover > h3 a  {
+  padding-left: 25px!important;
+}

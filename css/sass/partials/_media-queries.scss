@@ -1,0 +1,47 @@
+// extra small devices (portrait phones, less than 480px)
+@include xs {
+
+  // push menu
+  .uu-main-nav.uu-main-nav-open {
+    width: 100%;
+  }
+  .page-container.uu-body-pushbody-left {
+    left: -100%!important;
+  }
+  // mobile close nav
+  .mobile-close-nav {
+    display: block;
+  }
+
+  .uu-header {
+    text-align: center;
+  }
+
+  .uu-search-btn {
+    left: 0px;
+    right: auto;
+  }
+
+}
+
+// small devices (landscape phones, 480px and up)
+@include sm {
+
+}
+
+// medium devices (tablets, 768px and up)
+@include md {
+
+  .uu-site-title {
+    font-size: 18px;
+  }
+  .uu-site-title span {
+    display: none;
+  }
+
+}
+
+// large devices (desktops, 992px and up)
+@include lg {
+
+}
