@@ -13,7 +13,7 @@ Text Domain: umctheme3
 /* ===========================
 	Fonts
 ============================ */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:400,600,700|Quantico:700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:300,400,600,700|Quantico:700");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* ===========================
@@ -32,26 +32,14 @@ Text Domain: umctheme3
 @import "partials/header";
 // 3. Footer
 @import "partials/footer";
-// 4. Media Queries
-@import "partials/media-queries";
+// 4. Bootstrap Overrides
+@import "partials/bs-overrides";
 // 5. Body
-.page-container {
-  position: relative;
-  left: 0;
-  @include transition(all, 0.3s)
-}
-.page-container.uu-body-pushbody-left {
-  left: -350px;
-}
-
-main {
-  min-height: 1200px;
-}
-
-// 6. Widgets
-
-// 7. Plugin Specific Overrides
-
+@import "partials/body";
+// 6. Forms
+@import "partials/forms";
+// 7. Side Nav
+@import "partials/side-nav";
 // 8. Helper Classes
 
 // helper classes #######################################

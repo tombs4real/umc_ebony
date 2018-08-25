@@ -9,6 +9,14 @@
 }
 
 
+// Box Shadows
+@mixin shadow($horz-length, $vert-length, $blur, $spread, $color) {
+  -webkit-box-shadow: $horz-length $vert-length $blur $spread $color;
+  -moz-box-shadow: $horz-length $vert-length $blur $spread $color;
+  box-shadow: $horz-length $vert-length $blur $spread $color;
+}
+
+
 // Media Query Beakpoints
 // Extra small devices (portrait phones, less than 479px)
 @mixin xs {

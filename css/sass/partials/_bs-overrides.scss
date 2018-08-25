@@ -1,0 +1,20 @@
+
+
+// modals
+.modal-dialog {
+  margin-top: 10em;
+}
+
+.modal-backdrop {
+  background-color: $uu-ebony;
+}
+.modal-backdrop.show {
+  opacity: .9;
+}
+
+
+// search modal ovverrides
+#uu-search-modal .modal-content {
+  background: none!important;
+  border: 0px;
+}

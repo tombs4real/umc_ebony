@@ -178,7 +178,7 @@
         <li class="has-sub">
           <h3>
             <a href="#">
-              Resources
+              This is a fairly long title
             </a>
           </h3>
           <!-- sub menu -->
@@ -186,7 +186,7 @@
             <li>
               <h3>
                 <a href="#">
-                  Marketing
+                  Social Media Guidelines
                 </a>
               </h3>
             </li>
@@ -213,7 +213,7 @@
         <li>
           <h3>
             <a href="#">
-              Our Work
+              This is a ridiculously long title
             </a>
           </h3>
         </li>

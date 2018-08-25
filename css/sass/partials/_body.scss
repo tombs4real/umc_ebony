@@ -1,0 +1,162 @@
+
+.uu-body.uu-body-pushbody-left {
+  overflow: hidden;
+}
+
+.page-container {
+  position: relative;
+  left: 0;
+  @include transition(all, 0.3s)
+}
+
+.page-container.uu-body-pushbody-left {
+  left: -350px;
+}
+
+main {
+  min-height: 1200px;
+}
+
+
+section {
+  padding: 2% 0;
+}
+
+
+
+.uu-marquee {
+  height: 70vh;
+  overflow: hidden;
+}
+.uu-marquee:hover .marquee-bg-img {
+  transform: scale(2);
+}
+.marquee-bg-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  @include transition(all, 40s)
+}
+
+
+
+
+// style guide
+
+.color-block-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.color-block {
+  flex-grow: 1;
+  height: 100%;
+  padding: 100px 20px 0px 20px;
+  width: 33%;
+  @include transition(all, 0.3s)
+}
+
+.color-block:hover {
+  transform: translateY(-5px);
+  @include shadow(10px, 10px, 20px, 0px, rgba(0,0,0,0.2));
+}
+
+.color-block.small {
+  flex-grow: 1;
+  height: 100%;
+  padding: 20px 20px 0px 20px;
+  width: 25%;
+}
+
+.color-block p {
+  opacity: .8;
+  font-size: 12px;
+}
+
+.color-block.uu-ebony {
+  background: $uu-ebony;
+  color: $white
+}
+.color-block.uu-ebony h6 {
+  color: $white;
+  margin-bottom: 0px;
+}
+
+.color-block.uu-red {
+  background: $uu-red;
+  color: $white
+}
+.color-block.uu-red h6 {
+  color: $white;
+  margin-bottom: 0px;
+}
+
+.color-block.uu-smoke {
+  background: $uu-smoke;
+}
+.color-block.uu-smoke h6 {
+  margin-bottom: 0px;
+}
+
+.color-block.uu-slate {
+  background: $uu-slate;
+  color: $white;
+}
+.color-block.uu-slate h6 {
+  margin-bottom: 0px;
+  color: $white;
+}
+
+.color-block.uu-black {
+  background: $black;
+  color: $white;
+}
+.color-block.uu-black h6 {
+  margin-bottom: 0px;
+  color: $white;
+}
+
+.color-block.uu-white {
+  background: $white;
+}
+.color-block.uu-white h6 {
+  margin-bottom: 0px;
+}
+
+.color-block.uu-grey {
+  background: $grey;
+  color: $white;
+}
+.color-block.uu-grey h6 {
+  margin-bottom: 0px;
+  color: $white;
+}
+
+
+
+// footer media queries
+// extra small devices (portrait phones, less than 480px)
+@include xs {
+
+}
+
+// small devices (landscape phones, 480px and up)
+@include sm {
+  .color-block {
+    width: 100%;
+  }
+  .color-block.small {
+    width: 50%;
+  }
+
+}
+
+// medium devices (tablets, 768px and up)
+@include md {
+
+}
+
+// large devices (desktops, 992px and up)
+@include lg {
+
+}

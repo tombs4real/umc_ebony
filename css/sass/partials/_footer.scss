@@ -14,7 +14,7 @@
 }
 
 .uu-footer .footer-top .uu-block-logo {
-  max-width: 100px;
+  max-width: 75px;
   margin-bottom: 20px;
 }
 
@@ -28,7 +28,6 @@
   font-size: 12px;
   color: #D5D5D5;
 }
-
 
 .uu-footer .footer-top h3.uu-main-nav-heading {
   font-size: 12px;
@@ -72,7 +71,7 @@
 .uu-footer .footer-bottom .legal {
   font-size: 11px;
   text-transform: uppercase;
-  color: #847A7A;
+  color: $uu-slate;
 }
 .uu-footer .footer-bottom .legal ul {
   list-style-type: none;
@@ -99,7 +98,7 @@
   content: ''
 }
 .uu-footer .footer-bottom .legal ul li a {
-  color: #847A7A;
+  color: $uu-slate;
   @include transition(all, 0.3s)
 }
 .uu-footer .footer-bottom .legal ul li a:hover {

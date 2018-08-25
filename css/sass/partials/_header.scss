@@ -2,6 +2,8 @@
   position: relative;
   background: $uu-ebony;
   padding: 15px 0;
+  z-index: 99;
+  @include shadow(0px, 5px, 10px, 0px, rgba(0,0,0,0.2));
   @include transition(all, 0.3s)
 }
 
@@ -276,7 +278,7 @@ $button-transistion-duration: 0.3s;     // The transition duration
 .menu-block a {
   display: block;
   color: $white;
-  padding: 12px 0px;
+  padding: 10px 0px;
   @include transition(all, 0.3s)
 }
 
@@ -308,8 +310,8 @@ h3.uu-main-nav-heading {
 }
 
 .menu-block h3 {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
   margin-bottom: 0px;
 }
 
@@ -328,14 +330,14 @@ h3.uu-main-nav-heading {
   background: $uu-black;
   color: $white;
   font-size: 20px;
-  padding: 11px 0px 0px 18px;
+  padding: 9px 0px 0px 18px;
   border-left: 1px solid #4B4B4B;
   cursor: pointer;
   @include transition(all, 0.3s)
 }
 .has-sub i:hover {
   background: $uu-ebony;
-  padding-top: 9px;
+  padding-top: 7px;
 }
 
 .sub-menu {
@@ -343,8 +345,8 @@ h3.uu-main-nav-heading {
   background-color: #292222;
 }
 .sub-menu h3 {
-  font-size: 14px!important;
-  line-height: 16px;
+  font-size: 12px!important;
+  line-height: 14px;
 }
 .sub-menu li {
   border-bottom: 1px solid #3B3B3B;
@@ -360,4 +362,57 @@ h3.uu-main-nav-heading {
 }
 .sub-menu li:hover > h3 a  {
   padding-left: 25px!important;
+}
+
+
+
+
+
+// header media queries
+// extra small devices (portrait phones, less than 480px)
+@include xs {
+
+  // push menu
+  .uu-main-nav.uu-main-nav-open {
+    width: 100%;
+  }
+  .page-container.uu-body-pushbody-left {
+    left: -100%!important;
+  }
+  // mobile close nav
+  .mobile-close-nav {
+    display: block;
+  }
+
+  .uu-header {
+    text-align: center;
+  }
+
+  .uu-search-btn {
+    left: 0px;
+    right: auto;
+  }
+
+}
+
+// small devices (landscape phones, 480px and up)
+@include sm {
+
+}
+
+// medium devices (tablets, 768px and up)
+@include md {
+
+  .uu-site-title {
+    font-size: 18px;
+  }
+  .uu-site-title span {
+    display: none;
+  }
+
+}
+
+// large devices (desktops, 992px and up)
+@include lg {
+
 }

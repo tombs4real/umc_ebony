@@ -15,7 +15,7 @@
           </a>
         </h1>
         <!-- end site title -->
-        <button id="uu-search-trigger" class="uu-search-btn">
+        <button id="uu-search-trigger" class="uu-search-btn" data-toggle="modal" data-target="#uu-search-modal">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
         <!-- search button -->
