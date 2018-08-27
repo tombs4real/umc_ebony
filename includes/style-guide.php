@@ -1,8 +1,6 @@
 <!-- section -->
-<section>
-  <div class="uu-marquee">
-    <div class="marquee-bg-img" style="background-image: url('img/marquees/marquee1.jpg');"></div>
-  </div>
+<section class="uu-marquee">
+  <div class="marquee-bg-img" style="background-image: url('img/marquees/marquee1.jpg');"></div>
 </section>
 <!-- end section -->
 <!-- section -->
@@ -16,19 +14,22 @@
           <div class="uu-side-nav">
             <ul>
               <li>
-                <a href="#typography" class="active">Typography</a>
+                <a href="#typography" class="active uu-scroll-link">Typography</a>
               </li>
               <li>
-                <a href="#colors">Colors</a>
+                <a href="#colors" class="uu-scroll-link">Colors</a>
               </li>
               <li>
-                <a href="#buttons">Buttons</a>
+                <a href="#buttons" class="uu-scroll-link">Buttons</a>
               </li>
               <li>
-                <a href="#blockquotes">Block Quotes</a>
+                <a href="#blockquotes" class="uu-scroll-link">Block Quotes</a>
               </li>
               <li>
-                <a href="#dropcaps">Drop Caps</a>
+                <a href="#dropcaps" class="uu-scroll-link">Drop Caps</a>
+              </li>
+              <li>
+                <a href="#lists" class="uu-scroll-link">Lists</a>
               </li>
             </ul>
           </div>
@@ -38,8 +39,9 @@
       </div>
       <div class="col-md-9">
 
-        <div class="row">
+        <div class="row section-selector">
           <div class="col-12">
+            <a id="typography"></a>
             <h1>Typography</h1>
             <p class="lead">
               The Federation's gone; the Borg is everywhere! What? We're not at all alike! Congratulations - you just destroyed the Enterprise. We finished our first sensor sweep of the neutral zone. Yesterday I did not know how to eat gagh. Now, how the hell do we defeat an enemy that knows us better than we know ourselves? How long can two people talk about nothing? and attack the Romulans. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules.
@@ -79,6 +81,7 @@
         <hr>
         <div class="row">
           <div class="col-12">
+            <a id="colors" class="section-selector"></a>
             <h1>Colors</h1>
           </div>
         </div>
@@ -120,6 +123,7 @@
         <hr>
         <div class="row">
           <div class="col-12">
+            <a id="buttons" class="section-selector"></a>
             <h1>Buttons</h1>
           </div>
         </div>
@@ -164,6 +168,94 @@
             </div>
           </div>
         </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <a id="blockquotes" class="section-selector"></a>
+            <h1>Block Quotes</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <blockquote>
+              We finished our first sensor sweep of the neutral zone. The game’s not big enough unless it scares you a little. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf. Computer, lights up! Worf, It’s better than music. It’s jazz. When has justice ever been as simple as a rule book? Well, I’ll say this for him - he’s sure of himself. Travel time to the nearest starbase?
+              <span>- <strong>William Thomas Riker</strong>, First Officer, USS Enterprise-D</span>
+            </blockquote>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <a id="dropcaps" class="section-selector"></a>
+            <h1>Drop Caps</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="drop-cap">
+              Why are we out here chasing comets? When has justice ever been as simple as a rule book? Mr. Crusher, ready a collision course with the Borg ship. Our neural pathways have become accustomed to your sensory input patterns. Smooth as an android's bottom, eh, Data? I'll alert the crew. What? We're not at all alike! About four years. I got tired of hearing how young I looked. Mr. Worf, you sound like a man who's asking his friend if he can start dating his sister. The look in your eyes, I recognize it. You used to have it for me. But the probability of making a six is no greater than that of rolling a seven. Shields up! Rrrrred alert! Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody. Well, I'll say this for him - he's sure of himself. Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? You bet I'm agitated! I may be surrounded by insanity, but I am not insane. This should be interesting. When has justice ever been as simple as a rule book? I recommend you don't fire until you're within 40,000 kilometers. The unexpected is our normal routine. Yesterday I did not know how to eat gagh. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <a id="lists" class="section-selector"></a>
+            <h1>Lists</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Default List</h4>
+            <ul>
+              <li>USS Enterprise</li>
+              <li>USS Ares</li>
+              <li>USS Entente</li>
+              <li>USS Reliant</li>
+              <li>USS Lynx</li>
+              <li>USS Stargazer</li>
+              <li>USS Pegasus</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Ordered List</h4>
+            <ol>
+              <li>USS Enterprise</li>
+              <li>USS Ares</li>
+              <li>USS Entente</li>
+              <li>USS Reliant</li>
+              <li>USS Lynx</li>
+              <li>USS Stargazer</li>
+              <li>USS Pegasus</li>
+            </ol>
+          </div>
+          <div class="col-md-4">
+            <h4>UU List</h4>
+            <ul class="uu-list">
+              <li>USS Enterprise</li>
+              <li>USS Ares</li>
+              <li>USS Entente</li>
+              <li>USS Reliant</li>
+              <li>USS Lynx</li>
+              <li>USS Stargazer</li>
+              <li>USS Pegasus</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Block lists</h4>
+            <ul class="block-list">
+              <li>USS Enterprise</li>
+              <li>USS Ares</li>
+              <li>USS Entente</li>
+            </ul>
+          </div>
+        </div>
+
 
       </div>
     </div>

@@ -58,6 +58,7 @@
   border-left: 1px solid #707070;
   padding-left: 15px;
   margin-left: 10px;
+  margin-bottom: .5rem;
   opacity: 1;
   @include transition(all, 0.3s)
 }
@@ -410,6 +411,11 @@ h3.uu-main-nav-heading {
   }
   .uu-site-title span {
     display: none;
+  }
+
+  .uu-header.shrink h1.uu-site-title a {
+    position: relative;
+    top: 2px;
   }
 
 }

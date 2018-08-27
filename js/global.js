@@ -35,11 +35,13 @@ $(document).ready(function(){
   	    stickySideNav();
   	}).scroll();
 
+
     // side nav active toggle
     $('.uu-side-nav ul li a').click(function() {
       $('.uu-side-nav ul li a').removeClass('active');
       $(this).addClass('active');
     });
+
 });
 
 // shrink nav on scroll
@@ -49,4 +51,12 @@ $(window).scroll(function(){
 
   if (scroll >= 68) header.addClass('shrink');
   else header.removeClass('shrink');
+});
+
+
+// scroll to anchor
+$('.uu-scroll-link').click(function(e) {
+    e.preventDefault();
+    var linkID = $(this).attr('href');
+    $('html,body').animate({scrollTop: $(linkID).offset().top - 100},'slow');
 });

@@ -15,18 +15,22 @@
 
 main {
   min-height: 1200px;
+  padding-top: 67.23px;
 }
 
 
 section {
-  padding: 2% 0;
+  padding: 5% 0;
 }
 
 
 
 .uu-marquee {
+  position: relative;
+  top: -67.23px;
   height: 70vh;
   overflow: hidden;
+  padding: 0px;
 }
 .uu-marquee:hover .marquee-bg-img {
   transform: scale(2);
