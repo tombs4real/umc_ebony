@@ -70,3 +70,104 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.uu-btn {
+  display: inline-block;
+  margin: 10px auto;
+  position: relative;
+  background: $uu-red;
+  color: $white;
+  padding: 8px 40px 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $ff-mont;
+  text-transform: uppercase;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  @include shadow(0px, 10px, 20px, 0px, rgba(0,0,0,0.1));
+  @include transition(all, 0.3s);
+}
+
+.uu-btn::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 20px;
+  content: "\f105";
+  font-family: "FontAwesome";
+}
+
+.uu-btn:hover {
+  background: #750000;
+  color: $white;
+  transform: translateY(-2px);
+  @include shadow(0px, 20px, 30px, 0px, rgba(0,0,0,0.1));
+}
+
+// button colors
+
+.uu-btn.ebony {
+  background: $uu-ebony;
+  color: $white;
+}
+
+.uu-btn.ebony:hover {
+  background: $black;
+  color: $white;
+}
+
+.uu-btn.grey {
+  background: $uu-slate;
+  color: $white;
+}
+
+.uu-btn.grey:hover {
+  background: $uu-ebony;
+  color: $white;
+}
+
+// button sizes
+
+.uu-btn.small {
+  padding: 5px 30px 5px 15px;
+  font-size: 12px;
+}
+
+.uu-btn.small::after {
+  right: 15px;
+  top: calc(50% - 10px);
+}
+
+.uu-btn.large {
+  padding: 10px 44px 10px 20px;
+  font-size: 16px;
+}
+
+.uu-btn.large::after {
+  right: 22px;
+  top: calc(50% - 14px);
+}
+
+// button types
+
+.ghost {
+  background: none;
+  border: 2px solid $uu-red;
+  color: $uu-red;
+}
+
+.ghost:hover {
+  background: $uu-red;
+  color: $white;
+}
+
+.ghost.white {
+  border-color: $white;
+  color: $white;
+}
+
+.ghost.white:hover {
+  background-color: $white;
+  color: $uu-red;
+}

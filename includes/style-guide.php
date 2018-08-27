@@ -75,6 +75,7 @@
             <p>We could cause a diplomatic crisis. Take the ship into the Neutral Zone The look in your eyes, I recognize it. You used to have it for me.</p>
           </div>
         </div>
+
         <hr>
         <div class="row">
           <div class="col-12">
@@ -115,6 +116,55 @@
             </div>
           </div>
         </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <h1>Buttons</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <button type="button" name="button" class="uu-btn large">Large Button</button><br />
+            <button type="button" name="button" class="uu-btn">Red Button</button><br />
+            <button type="button" name="button" class="uu-btn small">small Button</button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" name="button" class="uu-btn ebony large">Large Button</button><br />
+            <button type="button" name="button" class="uu-btn ebony">Ebony Button</button><br />
+            <button type="button" name="button" class="uu-btn ebony small">small Button</button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" name="button" class="uu-btn grey large">Large Button</button><br />
+            <button type="button" name="button" class="uu-btn grey">Grey Button</button><br />
+            <button type="button" name="button" class="uu-btn grey small">small Button</button>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <a href="#" class="uu-btn large btn-block">Red Block Button</a><br />
+            <a href="#" class="uu-btn ebony btn-block">Ebony Block Button</a><br />
+            <a href="#" class="uu-btn grey small btn-block">Grey Block Button</a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            <div class="btn-color-block-container">
+              <div class="color-block small uu-smoke">
+                <button type="button" name="button" class="uu-btn btn-block ghost">Ghost Button</button>
+              </div>
+              <div class="color-block small uu-red">
+                <button type="button" name="button" class="uu-btn white btn-block ghost">Ghost Button</button>
+              </div>
+              <div class="color-block small uu-ebony">
+                <button type="button" name="button" class="uu-btn white btn-block ghost">Ghost Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 

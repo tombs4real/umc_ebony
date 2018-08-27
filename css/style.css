@@ -69,6 +69,94 @@ a {
 a:hover {
   text-decoration: none; }
 
+.uu-btn {
+  display: inline-block;
+  margin: 10px auto;
+  position: relative;
+  background: #CC0000;
+  color: #ffffff;
+  padding: 8px 40px 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.uu-btn::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 20px;
+  content: "\f105";
+  font-family: "FontAwesome"; }
+
+.uu-btn:hover {
+  background: #750000;
+  color: #ffffff;
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1); }
+
+.uu-btn.ebony {
+  background: #372C2C;
+  color: #ffffff; }
+
+.uu-btn.ebony:hover {
+  background: #000000;
+  color: #ffffff; }
+
+.uu-btn.grey {
+  background: #847A7A;
+  color: #ffffff; }
+
+.uu-btn.grey:hover {
+  background: #372C2C;
+  color: #ffffff; }
+
+.uu-btn.small {
+  padding: 5px 30px 5px 15px;
+  font-size: 12px; }
+
+.uu-btn.small::after {
+  right: 15px;
+  top: calc(50% - 10px); }
+
+.uu-btn.large {
+  padding: 10px 44px 10px 20px;
+  font-size: 16px; }
+
+.uu-btn.large::after {
+  right: 22px;
+  top: calc(50% - 14px); }
+
+.ghost {
+  background: none;
+  border: 2px solid #CC0000;
+  color: #CC0000; }
+
+.ghost:hover {
+  background: #CC0000;
+  color: #ffffff; }
+
+.ghost.white {
+  border-color: #ffffff;
+  color: #ffffff; }
+
+.ghost.white:hover {
+  background-color: #ffffff;
+  color: #CC0000; }
+
 .uu-header {
   position: relative;
   background: #372C2C;
@@ -357,7 +445,9 @@ h3.uu-main-nav-heading {
   margin: 0px; }
 
 .menu-block h3 {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 14px;
   margin-bottom: 0px; }
 
@@ -692,6 +782,25 @@ section {
   margin-bottom: 0px;
   color: #ffffff; }
 
+.btn-color-block-container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.btn-color-block-container .color-block {
+  flex-grow: 1;
+  height: 100%;
+  padding: 10px;
+  width: 33%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.btn-color-block-container .color-block:hover {
+  transform: translateY(0px);
+  box-shadow: none; }
+
 @media (max-width: 768px) {
   .color-block {
     width: 100%; }
@@ -722,7 +831,7 @@ input.search-input:focus {
 .search-form-btn {
   position: absolute;
   font-size: 21px;
-  top: 2px;
+  top: 0;
   right: 6px;
   background: none;
   border: 0px;
