@@ -22,16 +22,19 @@
   font-size: 14px;
   font-weight: 700;
   color: #D5D5D5;
+  margin-bottom: 5px;
 }
 
 .uu-footer .footer-top p.department-address {
   font-size: 12px;
+  line-height: 16px;
   color: #D5D5D5;
 }
 
 .uu-footer .footer-top h3.uu-main-nav-heading {
   font-size: 12px;
   margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .uu-footer .footer-top hr {
@@ -115,6 +118,10 @@
   display: inline-block;
   margin: 0px 10px;
 }
+.uu-footer .footer-bottom .uu-social-list li {
+  padding-left: 0px;
+}
+
 
 .uu-footer .footer-bottom .uu-social-list li a {
   color: $white;

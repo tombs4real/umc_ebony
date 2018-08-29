@@ -9,8 +9,14 @@
 
 // fixed header
 .uu-header.fixed {
+  left: 0;
   position: fixed;
   width: 100%;
+  @include transition(all, 0.3s)
+}
+// move header left when nav is open
+.page-container.uu-body-pushbody-left .uu-header {
+  left: -350px;
 }
 
 // header shrink on scroll
