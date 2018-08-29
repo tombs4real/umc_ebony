@@ -42,6 +42,18 @@ $(document).ready(function(){
       $(this).addClass('active');
     });
 
+
+    // tabs
+    $('.sow-tabs-tab').click(function(e) {
+      e.stopPropagation();
+      var target = ($(this).data('anchor'));
+      $('.sow-tabs-tab').removeClass('sow-tabs-tab-selected');
+      $(this).addClass('sow-tabs-tab-selected');
+      $('.sow-tabs-panel').hide();
+      $('#'+target).show();
+    });
+
+
 });
 
 // shrink nav on scroll

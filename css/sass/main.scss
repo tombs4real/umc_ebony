@@ -34,13 +34,15 @@ Text Domain: umctheme3
 @import "partials/footer";
 // 4. Bootstrap Overrides
 @import "partials/bs-overrides";
-// 5. Body
+// 5. SiteOrigins Overrides
+@import "partials/siteorigin-overrides";
+// 6. Body
 @import "partials/body";
-// 6. Forms
+// 7. Forms
 @import "partials/forms";
-// 7. Side Nav
+// 8. Side Nav
 @import "partials/side-nav";
-// 8. Helper Classes
+// 9. Helper Classes
 
 // helper classes #######################################
 .margin-auto {margin-left: auto; margin-right: auto;}

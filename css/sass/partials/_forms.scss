@@ -43,3 +43,104 @@ input.search-input:focus {
   @include transition(all, 0.3s)
 
 }
+
+
+// formiddable overrides
+
+.frm_form_fields {}
+
+.frm_form_title {}
+
+.frm_description {}
+
+.frm_fields_container {}
+
+.frm_form_field {
+  margin-bottom: 20px;
+}
+
+.frm_form_field.frm_half {
+  width: 50%;
+  float: left;
+  clear: none;
+}
+
+.frm_form_field.frm_half.frm_first {
+  padding-right: 15px;
+}
+
+.frm_form_field.frm_full {
+  clear: both;
+}
+
+.frm_form_field label {
+  display: block;
+}
+
+.frm_form_field label .frm_required {}
+
+.frm_form_field input {
+  display: block;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+}
+
+.frm_form_field select {
+  position: relative;
+  display: block;
+  height: 44px;
+  background: $white;
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.frm_form_field textarea {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px;
+  width: 100%;
+}
+
+.frm_form_field .frm_description {
+  display: none;
+}
+
+.frm_submit {}
+.frm_submit .frm_button_submit {
+  display: inline-block;
+  margin: 10px auto;
+  position: relative;
+  background: $uu-red;
+  color: $white;
+  padding: 8px 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $ff-mont;
+  text-transform: uppercase;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  @include shadow(0px, 10px, 20px, 0px, rgba(0,0,0,0.1));
+  @include transition(all, 0.3s);
+}
+
+.frm_submit .frm_button_submit:hover {
+  background: #750000;
+  color: $white;
+  transform: translateY(-2px);
+  @include shadow(0px, 20px, 30px, 0px, rgba(0,0,0,0.1));
+}
