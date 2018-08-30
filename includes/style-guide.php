@@ -548,6 +548,95 @@
             </div>
           </div>
         </div>
+        <hr>
+        <!-- calendars -->
+        <div class="row">
+          <div class="col-12">
+            <a id="calendars" class="section-selector"></a>
+            <h1>Calendars</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Week View</h4>
+            <!-- trumba calendar -->
+            <div class="cal-data">
+              <div class="cal-row">
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <h3>Sep <span>04</span></h3>
+                    </div>
+                    <div class="cal-body">
+                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <h4>Prime Directive Overview</h4>
+                      <p class="cal-loc">Star Base Alpha</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <h3>Sep <span>09</span></h3>
+                    </div>
+                    <div class="cal-body">
+                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <h4>Prime Directive Overview</h4>
+                      <p class="cal-loc">Star Base Alpha</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <h3>Sep <span>11</span></h3>
+                    </div>
+                    <div class="cal-body">
+                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <h4>Prime Directive Overview</h4>
+                      <p class="cal-loc">Star Base Alpha</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <h3>Sep <span>15</span></h3>
+                    </div>
+                    <div class="cal-body">
+                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <h4>Prime Directive Overview</h4>
+                      <p class="cal-loc">Star Base Alpha</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <h3>Sep <span>27</span></h3>
+                    </div>
+                    <div class="cal-body">
+                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <h4>Prime Directive Overview</h4>
+                      <p class="cal-loc">Star Base Alpha</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+              </div>
+            </div>
+            <!-- end trumba calendar -->
+          </div>
+        </div>
       </div>
     </div>
 

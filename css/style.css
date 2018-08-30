@@ -956,6 +956,75 @@ h3.uu-main-nav-heading {
   box-shadow: 0 4px 10px -2px #CC0000;
 }
 
+.cal-data {
+  background: #F7F9FB;
+  padding: 30px;
+}
+
+.cal-row {
+  display: flex;
+}
+
+.cal-item {
+  flex-grow: 1;
+  border-right: 1px solid #F7F9FB;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cal-header {
+  background: #372C2C;
+  padding: 20px 20px 20px 20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cal-header h3 {
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.cal-header h3 span {
+  font-size: 40px;
+  font-weight: 800;
+  display: block;
+}
+
+.cal-body {
+  background: #ffffff;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.cal-body h4 {
+  font-size: 14px;
+}
+
+.cal-item:hover {
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cal-item:hover .cal-header {
+  background: #CC0000;
+}
+
 .uu-body.uu-body-pushbody-left {
   overflow: hidden;
 }
