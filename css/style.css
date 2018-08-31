@@ -961,17 +961,17 @@ h3.uu-main-nav-heading {
   padding: 30px;
 }
 
-.cal-row {
+.cal-data.week .cal-row {
   display: flex;
-}
-
-.cal-item {
-  flex-grow: 1;
-  border-right: 1px solid #F7F9FB;
-  cursor: pointer;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cal-data.week .cal-item {
+  flex-grow: 1;
+  margin-right: 1px;
+  cursor: pointer;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -979,9 +979,33 @@ h3.uu-main-nav-heading {
   transition: all 0.3s;
 }
 
+.cal-data.week .cal-item:last-child {
+  margin-right: 0px;
+}
+
+.cal-data.week .cal-item:nth-child(2n+0) .cal-header {
+  background: #585858;
+}
+
 .cal-header {
+  position: relative;
   background: #372C2C;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cal-header::before {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 30px;
+  content: '\f105';
+  font-family: "FontAwesome";
+  color: #ffffff;
+  opacity: 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -1014,8 +1038,12 @@ h3.uu-main-nav-heading {
   font-size: 14px;
 }
 
+.cal-loc {
+  color: #CC0000;
+}
+
 .cal-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.02);
   -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
@@ -1023,6 +1051,91 @@ h3.uu-main-nav-heading {
 
 .cal-item:hover .cal-header {
   background: #CC0000;
+}
+
+.cal-item:hover .cal-header::before {
+  opacity: 1;
+  transform: translateX(-5px);
+}
+
+.cal-data.list {
+  background: none;
+  padding: 30px;
+}
+
+.cal-data.list .cal-row {
+  display: block;
+}
+
+.cal-data.list h3.group-title {
+  background: #847A7A;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+.cal-data.list .cal-item {
+  margin-right: 1px;
+  cursor: pointer;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cal-data.list .cal-header {
+  display: flex;
+  background: #ffffff;
+  border-bottom: 1px solid #F7F9FB;
+  padding-bottom: 5px;
+}
+
+.cal-data.list .cal-header::before {
+  display: none;
+}
+
+.cal-data.list .cal-header .cal-date, .cal-data.list .cal-header .cal-loc {
+  flex-grow: 1;
+}
+
+.cal-data.list .cal-header h4 {
+  color: #372C2C;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.cal-data.list .cal-header .cal-loc {
+  text-align: right;
+  font-size: 12px;
+}
+
+.cal-data.list .cal-body {
+  display: flex;
+  background: #ffffff;
+}
+
+.cal-data.list .cal-body .cal-img, .cal-data.list .cal-body .cal-info {
+  flex-grow: 1;
+}
+
+.cal-data.list .cal-body .cal-img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.cal-data.list .cal-body .cal-info {
+  color: #372C2C;
+}
+
+.cal-data.list h4.cal-title {
+  color: #CC0000;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .uu-body.uu-body-pushbody-left {

@@ -40,6 +40,9 @@
               <li>
                 <a href="#tabs" class="uu-scroll-link">Tabs</a>
               </li>
+              <li>
+                <a href="#calendars" class="uu-scroll-link">Calendars</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -558,9 +561,9 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h4>Week View</h4>
             <!-- trumba calendar -->
-            <div class="cal-data">
+            <div class="cal-data week">
+              <h4>Week View</h4>
               <div class="cal-row">
                 <!-- day -->
                 <div class="cal-item">
@@ -583,7 +586,7 @@
                       <h3>Sep <span>09</span></h3>
                     </div>
                     <div class="cal-body">
-                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <p class="cal-loc">Monday <br>12:30pm - 1:30pm</p>
                       <h4>Prime Directive Overview</h4>
                       <p class="cal-loc">Star Base Alpha</p>
                     </div>
@@ -597,7 +600,7 @@
                       <h3>Sep <span>11</span></h3>
                     </div>
                     <div class="cal-body">
-                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <p class="cal-loc">Wednesday <br>12:30pm - 1:30pm</p>
                       <h4>Prime Directive Overview</h4>
                       <p class="cal-loc">Star Base Alpha</p>
                     </div>
@@ -611,7 +614,7 @@
                       <h3>Sep <span>15</span></h3>
                     </div>
                     <div class="cal-body">
-                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <p class="cal-loc">Thursday <br>12:30pm - 1:30pm</p>
                       <h4>Prime Directive Overview</h4>
                       <p class="cal-loc">Star Base Alpha</p>
                     </div>
@@ -625,9 +628,87 @@
                       <h3>Sep <span>27</span></h3>
                     </div>
                     <div class="cal-body">
-                      <p class="cal-loc">Tuesday <br>12:30pm - 1:30pm</p>
+                      <p class="cal-loc">Friday <br>12:30pm - 1:30pm</p>
                       <h4>Prime Directive Overview</h4>
                       <p class="cal-loc">Star Base Alpha</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+              </div>
+            </div>
+            <!-- end trumba calendar -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- trumba calendar -->
+            <div class="cal-data list">
+              <h4>List View</h4>
+              <div class="cal-row">
+                <!-- month/group title -->
+                <h3 class="group-title">September 2018</h3>
+                <!-- end month/group title -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <div class="cal-date">
+                        <h4>Wednesday, Sep. 5 | 11am</h4>
+                      </div>
+                      <div class="cal-loc">USS Enterprise D (Ready Room)</div>
+                    </div>
+                    <div class="cal-body">
+                      <div class="cal-img">
+                        <img src="https://www.trumba.com/i/DgAj%2AIAeBxM%2APBZCU5NEYs0w.jpg" alt="" class="img-fluid">
+                      </div>
+                      <div class="cal-info">
+                        <h4 class="cal-title">Prime Directive Overview</h4>
+                        <p class="cal-desc">What’s a knock-out like you doing in a computer-generated gin joint like this? I’ve had twelve years to think about it. And if I had it to do over again</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <div class="cal-date">
+                        <h4>Thursday, Sep. 6 | 3pm</h4>
+                      </div>
+                      <div class="cal-loc">USS Enterprise D (Ready Room)</div>
+                    </div>
+                    <div class="cal-body">
+                      <!-- <div class="cal-img">
+                        <img src="https://www.trumba.com/i/DgAj%2AIAeBxM%2APBZCU5NEYs0w.jpg" alt="" class="img-fluid">
+                      </div> -->
+                      <div class="cal-info">
+                        <h4 class="cal-title">Prime Directive Overview</h4>
+                        <p class="cal-desc">What’s a knock-out like you doing in a computer-generated gin joint like this? I’ve had twelve years to think about it. And if I had it to do over again</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end day -->
+                <!-- day -->
+                <div class="cal-item">
+                  <a href="#">
+                    <div class="cal-header">
+                      <div class="cal-date">
+                        <h4>Friday, Sep. 9 | 1:30pm - 2:30pm</h4>
+                      </div>
+                      <div class="cal-loc">USS Enterprise D (Ready Room)</div>
+                    </div>
+                    <div class="cal-body">
+                      <div class="cal-img">
+                        <img src="https://www.trumba.com/i/DgBOtHMAw1G2qaBYRrwZbbhk.jpg" alt="" class="img-fluid">
+                      </div>
+                      <div class="cal-info">
+                        <h4 class="cal-title">Prime Directive Overview</h4>
+                        <p class="cal-desc">What’s a knock-out like you doing in a computer-generated gin joint like this? I’ve had twelve years to think about it. And if I had it to do over again</p>
+                      </div>
                     </div>
                   </a>
                 </div>

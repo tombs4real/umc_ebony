@@ -21,7 +21,7 @@
 
 .sow-tabs-tab-selected {
   position: relative;
-  color: #CC0000;
+  color: $uu-red;
 }
 .sow-tabs-tab-selected:after {
   position: absolute;
@@ -31,8 +31,8 @@
   content: "";
   widows: 100%;
   height: 6px;
-  background: linear-gradient(-20deg, #750000, #CC0000);
-  box-shadow: 0 4px 10px -2px #CC0000;
+  background: linear-gradient(-20deg, #750000, $uu-red);
+  box-shadow: 0 4px 10px -2px $uu-red;
 }
 
 
@@ -41,21 +41,45 @@
   background: $uu-smoke;
   padding: 30px;
 }
-.cal-row {
+
+// week view
+.cal-data.week .cal-row {
   display: flex;
-}
-.cal-item {
-  flex-grow: 1;
-  border-right: 1px solid $uu-smoke;
-  cursor: pointer;
   @include shadow(0px, 10px, 20px, 0px, rgba(0,0,0,0.1));
+}
+.cal-data.week .cal-item {
+  flex-grow: 1;
+  margin-right: 1px;
+  cursor: pointer;
   @include transition(all, 0.3s);
 }
+
+.cal-data.week .cal-item:last-child {
+  margin-right: 0px;
+}
+
+.cal-data.week .cal-item:nth-child(2n+0) .cal-header {
+  background: $grey;
+}
+
 .cal-header {
+  position: relative;
   background: $uu-ebony;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   @include transition(all, 0.3s);
 }
+
+.cal-header::before {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 30px;
+  content: '\f105';
+  font-family: "FontAwesome";
+  color: $white;
+  opacity: 0;
+  @include transition(all, 0.3s);
+}
+
 .cal-header h3 {
   margin: 0px;
   padding: 0px;
@@ -79,11 +103,96 @@
   font-size: 14px;
 }
 
+.cal-loc {
+  color: $uu-red;
+}
+
 .cal-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.02);
   @include shadow(0px, 20px, 30px, 0px, rgba(0,0,0,0.1));
 }
 
 .cal-item:hover .cal-header {
   background: $uu-red;
+}
+
+.cal-item:hover .cal-header::before {
+  opacity: 1;transform: translateX(-5px)
+}
+
+// list view
+.cal-data.list {
+  background: none;
+  padding: 30px;
+}
+
+.cal-data.list .cal-row {
+  display: block;
+}
+
+.cal-data.list h3.group-title {
+  background: $uu-slate;
+  color: $white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+.cal-data.list .cal-item {
+  margin-right: 1px;
+  cursor: pointer;
+  border-bottom: 1px dotted rgba(0,0,0,.2);
+  @include transition(all, 0.3s);
+}
+
+.cal-data.list .cal-header {
+  display: flex;
+  background: $white;
+  border-bottom: 1px solid $uu-smoke;
+  padding-bottom: 5px;
+}
+
+.cal-data.list .cal-header::before {
+  display: none;
+}
+
+.cal-data.list .cal-header .cal-date, .cal-data.list .cal-header .cal-loc {
+  flex-grow: 1;
+}
+
+.cal-data.list .cal-header h4 {
+  color: $uu-ebony;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.cal-data.list .cal-header .cal-loc {
+  text-align: right;
+  font-size: 12px;
+}
+
+.cal-data.list .cal-body {
+  display: flex;
+  background: $white;
+}
+
+.cal-data.list .cal-body .cal-img, .cal-data.list .cal-body .cal-info {
+  flex-grow: 1;
+}
+
+.cal-data.list .cal-body .cal-img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.cal-data.list .cal-body .cal-info {
+  color: $uu-ebony;
+}
+
+.cal-data.list h4.cal-title {
+  color: $uu-red;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
