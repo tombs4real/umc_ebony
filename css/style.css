@@ -340,6 +340,12 @@ ul li:hover, ol li:hover {
 
 .uu-card-body {
   padding: 30px;
+  margin-bottom: 60px;
+}
+
+.uu-card-body .read-more {
+  position: absolute;
+  bottom: 30px;
 }
 
 .uu-card.horz {
@@ -1584,4 +1590,21 @@ input.search-input:focus {
 .margin-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.eq-ht {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.eq-ht > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.eq-ht > [class*='col-'] > .uu-card {
+  height: 100%;
 }

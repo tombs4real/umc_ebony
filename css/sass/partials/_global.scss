@@ -321,6 +321,12 @@ ul li:hover, ol li:hover {
 
 .uu-card-body {
   padding: 30px;
+  margin-bottom: 60px;
+}
+
+.uu-card-body .read-more {
+  position: absolute;
+  bottom: 30px;
 }
 
 // horizontal cards

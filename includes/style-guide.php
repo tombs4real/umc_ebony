@@ -734,7 +734,7 @@
             <h4>Image Cards</h4>
           </div>
         </div>
-        <div class="row">
+        <div class="row eq-ht">
           <div class="col-md-6">
             <div class="uu-card">
               <div class="uu-card-img">
@@ -743,7 +743,7 @@
               <div class="uu-card-body">
                 <h4>Planned Giving</h4>
                 <p>A planned gift is a unique opportunity for you to create a lasting legacy for the University of Utah programs that matter most to you. These gifts also provide a way for you to pass on your values, achieve certain charitable and financial goals, and may yield certain federal tax advantages.</p>
-                <button type="button" class="uu-btn grey small">Learn More</button>
+                <button type="button" class="uu-btn grey small read-more">Learn More</button>
               </div>
             </div>
           </div>
@@ -755,7 +755,7 @@
               <div class="uu-card-body">
                 <h4>Share Your Story</h4>
                 <p>Were you a student at the University of Utah? Or perhaps you are a parent of a child currently enrolled? Maybe you have a personal story about your passion for the U. If so we would love to hear from you.</p>
-                <button type="button" class="uu-btn grey small">Learn More</button>
+                <button type="button" class="uu-btn grey small read-more">Learn More</button>
               </div>
             </div>
           </div>

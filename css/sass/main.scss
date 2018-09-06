@@ -46,3 +46,22 @@ Text Domain: umctheme3
 
 // helper classes #######################################
 .margin-auto {margin-left: auto; margin-right: auto;}
+
+
+// equal height columns
+.eq-ht {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.eq-ht > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+// equal height cards
+.eq-ht > [class*='col-'] > .uu-card {
+  height: 100%;
+}
