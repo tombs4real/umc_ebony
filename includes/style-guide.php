@@ -43,6 +43,9 @@
               <li>
                 <a href="#calendars" class="uu-scroll-link">Calendars</a>
               </li>
+              <li>
+                <a href="#cards" class="uu-scroll-link">Cards</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -718,6 +721,77 @@
             <!-- end trumba calendar -->
           </div>
         </div>
+
+        <!-- cards -->
+        <div class="row">
+          <div class="col-12">
+            <a id="cards" class="section-selector"></a>
+            <h1>Cards</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Image Cards</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="uu-card">
+              <div class="uu-card-img">
+                <img src="https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145228/cga_banner_03.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="uu-card-body">
+                <h4>Planned Giving</h4>
+                <p>A planned gift is a unique opportunity for you to create a lasting legacy for the University of Utah programs that matter most to you. These gifts also provide a way for you to pass on your values, achieve certain charitable and financial goals, and may yield certain federal tax advantages.</p>
+                <button type="button" class="uu-btn grey small">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="uu-card">
+              <div class="uu-card-img">
+                <img src="https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145234/planned-giving.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="uu-card-body">
+                <h4>Share Your Story</h4>
+                <p>Were you a student at the University of Utah? Or perhaps you are a parent of a child currently enrolled? Maybe you have a personal story about your passion for the U. If so we would love to hear from you.</p>
+                <button type="button" class="uu-btn grey small">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Horizontal Card</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="uu-card horz">
+              <div class="uu-card-img" style="background-image:url('https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145815/update-your-info.jpg');"></div>
+              <div class="uu-card-body">
+                <h4>Update your info</h4>
+                <p>Stay in touch! Please help us keep your personal information current. Use this form to update us. Having accurate contact information allows us to keep you informed.</p>
+                <button type="button" class="uu-btn grey small">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="uu-card horz right">
+              <div class="uu-card-img" style="background-image:url('https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145815/update-your-info.jpg');"></div>
+              <div class="uu-card-body">
+                <h4>Update your info</h4>
+                <p>Stay in touch! Please help us keep your personal information current. Use this form to update us. Having accurate contact information allows us to keep you informed.</p>
+                <button type="button" class="uu-btn grey small">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end cards -->
+
+
       </div>
     </div>
 
