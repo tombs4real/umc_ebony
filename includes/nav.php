@@ -24,7 +24,7 @@
       <ul id="menu-top-nav" class="uu-primary-menu" rel="top">
         <li>
           <h3>
-            <a href="#">
+            <a href="index.php">
               Home
             </a>
           </h3>
@@ -32,15 +32,15 @@
         <li class="has-sub">
           <h3>
             <a href="#">
-              Services
+              Pages
             </a>
           </h3>
           <!-- sub menu -->
           <ul class="sub-menu">
             <li>
               <h3>
-                <a href="#">
-                  Marketing
+                <a href="single-post.php">
+                  Single Post
                 </a>
               </h3>
             </li>

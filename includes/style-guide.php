@@ -762,7 +762,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <h4>Horizontal Card</h4>
+            <h4>Horizontal Card Left (default)</h4>
           </div>
         </div>
         <div class="row">
@@ -779,12 +779,46 @@
         </div>
         <div class="row">
           <div class="col-12">
+            <h4>Horizontal Card Right</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
             <div class="uu-card horz right">
               <div class="uu-card-img" style="background-image:url('https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145815/update-your-info.jpg');"></div>
               <div class="uu-card-body">
                 <h4>Update your info</h4>
                 <p>Stay in touch! Please help us keep your personal information current. Use this form to update us. Having accurate contact information allows us to keep you informed.</p>
                 <button type="button" class="uu-btn grey small">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Horizontal Color Card</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="uu-card horz color red">
+              <div class="uu-card-img" style="background-image:url('https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145228/cga_banner_03.jpg');"></div>
+              <div class="uu-card-body">
+                <h4>Update your info</h4>
+                <p>Stay in touch! Please help us keep your personal information current. Use this form to update us. Having accurate contact information allows us to keep you informed.</p>
+                <button type="button" class="uu-btn ghost white small">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="uu-card horz right color ebony">
+              <div class="uu-card-img" style="background-image:url('https://s3-us-west-2.amazonaws.com/umc-wp-giving/wp-content/uploads/2016/04/22145228/cga_banner_03.jpg');"></div>
+              <div class="uu-card-body">
+                <h4>Update your info</h4>
+                <p>Stay in touch! Please help us keep your personal information current. Use this form to update us. Having accurate contact information allows us to keep you informed.</p>
+                <button type="button" class="uu-btn ghost white small">Learn More</button>
               </div>
             </div>
           </div>

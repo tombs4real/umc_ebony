@@ -13,7 +13,7 @@ Text Domain: umctheme3
 /* ===========================
 	Fonts
 ============================ */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:300,400,600,700|Quantico:700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:300,400,600,700|Quantico:700|Noto+Serif+JP:300,400,500");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* ===========================
@@ -65,3 +65,18 @@ Text Domain: umctheme3
 .eq-ht > [class*='col-'] > .uu-card {
   height: 100%;
 }
+
+#flexit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#flexit .uu-card {
+  flex: 1 0 31.3333%;
+  min-width: 290px;
+  margin: 0px 1% 30px 1%;
+}
+
+/* #flexit .uu-card:last-child {
+  flex: 0 0 31.3333%;
+} */

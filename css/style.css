@@ -13,7 +13,7 @@ Text Domain: umctheme3
 /* ===========================
 	Fonts
 ============================ */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:300,400,600,700|Quantico:700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900|Open+Sans:300,400,600,700|Quantico:700|Noto+Serif+JP:300,400,500");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* ===========================
 	Mixins & Variables
@@ -76,6 +76,116 @@ p.lead {
   font-size: 18px;
   font-weight: 400;
   color: #372C2C;
+}
+
+.single-post main article {
+  margin: 50px auto;
+}
+
+article .entry-content {
+  font-family: "Noto Serif JP", sans-serif;
+  margin: 30px auto 0px auto;
+}
+
+.single-post main article .post-title {
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.single-post main article .post-category {
+  font-size: 12px;
+  font-weight: 800;
+  color: #847A7A;
+  margin-bottom: 10px;
+}
+
+.entry-meta {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #847A7A;
+  text-transform: uppercase;
+}
+
+.entry-meta span {
+  position: relative;
+  margin-right: 15px;
+}
+
+.entry-meta span::after {
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  content: '/';
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.entry-meta span:last-of-type:after {
+  content: '';
+  display: none;
+}
+
+.single-post main article header .post-image {
+  position: relative;
+}
+
+.single-post main article header .post-image::after {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  content: url("../img/blocku.svg");
+}
+
+.uu-relposts-carousel {
+  position: relative;
+}
+
+.uu-relposts-carousel .owl-nav {
+  font-size: 40px;
+  position: absolute;
+  top: calc(50% - 35px);
+  width: 100%;
+}
+
+.uu-relposts-carousel .owl-nav .owl-prev, .uu-relposts-carousel .owl-nav .owl-next {
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.uu-relposts-carousel .owl-nav .owl-prev:hover, .uu-relposts-carousel .owl-nav .owl-next:hover {
+  transform: scale(1.2);
+  color: #CC0000;
+}
+
+.uu-relposts-carousel .owl-nav .owl-prev {
+  left: -30px;
+}
+
+.uu-relposts-carousel .owl-nav .owl-next {
+  right: -30px;
+}
+
+.caption {
+  position: relative;
+  padding-left: 50px;
+  font-size: 12px;
+  margin: 10px 0px;
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+.caption::before {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  content: '';
+  height: 1px;
+  width: 40px;
+  background: #CC0000;
 }
 
 a {
@@ -365,14 +475,39 @@ ul li:hover, ol li:hover {
 .uu-card.horz .uu-card-body {
   flex-grow: 1;
   width: 50%;
+  margin-bottom: 0px;
 }
 
 .uu-card.horz.right .uu-card-img {
   order: 2;
 }
 
-.uu-card.horz.right .uu-card-body {
+.uu-card.horz.right .uu-card.horz.color.red {
   order: 1;
+}
+
+.uu-card.horz.color .uu-card-img {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.uu-card.horz.right.color .uu-card-img {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+}
+
+.uu-card.horz.color.red, .uu-card.horz.color.red .uu-card-body {
+  background: #CC0000;
+  color: #ffffff;
+}
+
+.uu-card.horz.color.red h1, .uu-card.horz.color.red h2, .uu-card.horz.color.red h3, .uu-card.horz.color.red h4, .uu-card.horz.color.red h5, .uu-card.horz.color.ebony h1, .uu-card.horz.color.ebony h2, .uu-card.horz.color.ebony h3, .uu-card.horz.color.ebony h4, .uu-card.horz.color.ebony h5 {
+  color: #ffffff;
+}
+
+.uu-card.horz.color.ebony, .uu-card.horz.color.ebony .uu-card-body {
+  background: #372C2C;
+  color: #ffffff;
 }
 
 .uu-header {
@@ -1608,3 +1743,19 @@ input.search-input:focus {
 .eq-ht > [class*='col-'] > .uu-card {
   height: 100%;
 }
+
+#flexit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#flexit .uu-card {
+  flex: 1 0 31.3333%;
+  min-width: 290px;
+  margin: 0px 1% 30px 1%;
+}
+
+/* #flexit .uu-card:last-child {
+  flex: 0 0 31.3333%;
+} */
