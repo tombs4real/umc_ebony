@@ -7,6 +7,7 @@
     <title></title>
     <!-- styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- end styles -->
   </head>
@@ -15,7 +16,7 @@
     <!-- Page Loader -->
     <div class="page-loader">
       <!-- svg block u -->
-      <div class="uu-logo-loader animated pulse infinite">
+      <div class="uu-logo-loader animated flip infinite">
         <svg version="1.1" id="blocku-loader-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 48.4 44.2" style="enable-background:new 0 0 48.4 44.2;" xml:space="preserve">
         <title>University of Utah Loader</title>
