@@ -12,6 +12,24 @@
   </head>
   <body class="uu-body">
 
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <!-- svg block u -->
+      <div class="uu-logo-loader animated pulse infinite">
+        <svg version="1.1" id="blocku-loader-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 48.4 44.2" style="enable-background:new 0 0 48.4 44.2;" xml:space="preserve">
+        <title>University of Utah Loader</title>
+        <polygon class="blocku-loader-svg" points="1.1,13.7 5.3,13.7 5.3,34.8 13.7,43.1 34.7,43.1 43.1,34.8 43.1,13.7 47.4,13.7 47.4,1.1 26.3,1.1
+        	26.3,13.7 30.5,13.7 30.5,30.5 17.9,30.5 17.9,13.7 22.1,13.7 22.1,1.1 1.1,1.1 "/>
+        </svg>
+      </div>
+      <!-- end svg block u -->
+      <div class="page-loader-bar"></div>
+      <div class="page-loader-top"></div>
+      <div class="page-loader-bottom"></div>
+    </div>
+    <!-- End Page Loader -->
+
     <!-- nav -->
     <?php include 'includes/nav.php'; ?>
     <!-- end nav -->
@@ -56,6 +74,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="js/global.js"></script>
     <!-- end scripts -->
   </body>
