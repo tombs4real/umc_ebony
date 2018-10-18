@@ -123,6 +123,26 @@ article .entry-content {
   content: url('../img/blocku.svg');
 }
 
+// Post With Rail
+article .entry-content.rail {
+  max-width: 760px;
+}
+
+.alignleft {
+  float: left;
+  margin: 0.4em 1em 1em 0em;
+  margin-left: -116px;
+}
+
+.wp-caption-text {
+  margin: 0.5em 0 0.7em;
+  font-size: 0.85em;
+  text-align: center;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  color: #909090;
+  padding: 5px 0;
+}
 
 // related posts
 // relaed posts carousel
